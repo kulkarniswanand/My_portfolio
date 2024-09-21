@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .custom-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .custom-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">My Portfolio</a>
+                </div>
+                <div>
+                    <a href="index.html" class="text-gray-800 hover:text-gray-600 mx-4">Home</a>
+                    <a href="projects/project1.html" class="text-gray-800 hover:text-gray-600 mx-4">Project 1</a>
+                    <a href="projects/project2.html" class="text-gray-800 hover:text-gray-600 mx-4">Project 2</a>
+                    <!-- Add more project links as needed -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold mb-4">Project Title</h1>
+        
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Project Image Gallery</h2>
+            <div class="custom-gallery">
+                <img src="../img/project1/image1.jpg" alt="Project Image 1">
+                <img src="../img/project1/image2.jpg" alt="Project Image 2">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Description</h2>
+            <p class="text-lg leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec 
+                convallis nisl. Integer at scelerisque eros.
+            </p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Technologies Used</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more technologies as needed -->
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Project Video</h2>
+            <video controls class="w-full rounded-md shadow-lg">
+                <source src="../videos/project1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-12">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-800">&copy; 2024 My Portfolio. All rights reserved.</p>
+                <div>
+                    <a href="#" class="text-gray-800 hover:text-gray-600 mx-2">Privacy Policy</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-600 mx-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailoring Management System</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom styles for scrollbar */
+    .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, Opera */
+    }
+    /* Video background styles */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.349);
+      padding: 2rem;
+      /* padding: 0%; */
+      border-radius: 8px;
+    }
+    .gallery-wrapper {
+      position: relative;
+    }
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.632);
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      z-index: 10;
+    }
+    #scroll-left {
+      left: 0;
+    }
+    #scroll-right {
+      right: 0;
+    }
+    .transition {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Video Background -->
+  <video autoplay muted loop class="video-background">
+    <source src="../video/tailor2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6 overlay">
+
+    <!-- Project Title -->
+    <section class="mb-6">
+      <h1 class="text-5xl font-extrabold mb-4 text-black text-center lg:text-7xl">Tailoring Management System</h1>
+    </section>
+
+    <section class="gallery-wrapper mb-6">
+      <button id="scroll-left" class="scroll-button">←</button>
+      <button id="scroll-right" class="scroll-button">→</button>
+      <div class="flex overflow-x-scroll scrollbar-hide transition lg:space-x-4" id="image-gallery">
+        <img src="../images/tailor/1.jpg" alt="Project Image 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/2.jpg" alt="Project Image 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/3.jpg" alt="Project Image 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/4.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/5.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/6.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/7.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/8.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/9.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/11.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/12.jpg" alt="Project Image 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/14.jpg" alt="Project Image 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/15.jpg" alt="Project Image 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/16.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/17.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/18.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/19.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/20.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/21.jpg" alt="Project Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="../images/tailor/22.jpg" alt="Project Image 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="mb-6">
+      <h2 class="text-4xl font-bold mb-2 text-black">Project Description:</h2>
+      <p class="text-black text-justify text-xl font-semibold">The Tailoring Management System is a comprehensive solution designed to streamline the operations of a tailoring business. This system allows for efficient management of customer orders, inventory, staff schedules, and financial transactions. It provides a user-friendly interface for tailors to track their work, manage appointments, and ensure timely delivery of garments.</p>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="mb-6">
+      <h2 class="text-4xl font-bold mb-2 text-black">Technologies Used</h2>
+      <ul class="list-disc list-outside text-justify text-black text-xl pl-6 font-semibold">
+        <li>HTML, CSS, and JavaScript for the front-end development</li>
+        <li>Tailwind CSS for styling</li>
+        <li>React.js for building user interfaces</li>
+        <li>Node.js and Express.js for the back-end development</li>
+        <li>MongoDB for the database</li>
+        <li>RESTful API for communication between the front-end and back-end</li>
+      </ul>
+    </section>
+
+    <!-- Summary -->
+    <section>
+      <h2 class="text-4xl font-bold mb-2 text-black">Summary</h2>
+      <p class="text-black text-xl text-justify font-semibold">The Tailoring Management System significantly enhances the efficiency and productivity of tailoring businesses by automating routine tasks and providing real-time insights into operations. It ensures customer satisfaction by enabling precise order tracking and timely delivery, ultimately contributing to the growth and success of the business.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 mb-0 mt-2">
+    <!-- Footer -->
+
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0">
+      <a href="index.html#Home" class="text-center md:text-left text-lg font-semibold hover:text-gray-400">Home</a>
+      <a href="index.html#About" class="text-center md:text-left text-lg font-semibold hover:text-gray-400">About</a>
+      <a href="index.html#skills" class="text-center md:text-left text-lg font-semibold hover:text-gray-400">Skills</a>
+      <a href="index.html#projects" class="text-center md:text-left text-lg font-semibold hover:text-gray-400">Projects</a>
+      <a href="index.html#contact" class="text-center md:text-left text-lg font-semibold hover:text-gray-400">Contact</a>
+    </nav>
+  </div>
+
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+      <p>&copy; 2024 Swanand Kulkarni. All Rights Reserved.</p>
+    </div>
+  
+  </footer>
+
+  <!-- JavaScript for scrolling functionality -->
+  <script>
+    const gallery = document.getElementById('image-gallery');
+    const scrollLeft = document.getElementById('scroll-left');
+    const scrollRight = document.getElementById('scroll-right');
+
+    scrollLeft.addEventListener('click', () => {
+      gallery.scrollBy({ left: -gallery.clientWidth, behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+      gallery.scrollBy({ left: gallery.clientWidth, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

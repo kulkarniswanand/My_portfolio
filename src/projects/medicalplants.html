@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Plants Leaves Detection System</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom styles for scrollbar */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+      /* Video background styles */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .overlay {
+        background-color: rgba(255, 255, 255, 0.671);
+        padding: 2rem;
+        /* padding: 0%; */
+        border-radius: 8px;
+      }
+      .gallery-wrapper {
+        position: relative;
+      }
+      .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.632);
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        z-index: 10;
+      }
+      #scroll-left {
+        left: 0;
+      }
+      #scroll-right {
+        right: 0;
+      }
+      .transition {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+      <source src="../../video/plant.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-6 overlay">
+      <!-- Project Title -->
+      <section class="mb-6">
+        <h1
+          class="text-5xl font-extrabold mb-4 text-black text-center lg:text-7xl"
+        >
+          Medical Plants Leaves Detection System
+        </h1>
+      </section>
+
+      <section class="gallery-wrapper mb-6">
+        <button id="scroll-left" class="scroll-button">←</button>
+        <button id="scroll-right" class="scroll-button">→</button>
+        <div
+          class="flex overflow-x-scroll scrollbar-hide transition lg:space-x-4"
+          id="image-gallery"
+        >
+          <img
+            src="../../images/medical/1 (1).png"
+            alt="Project Image 1"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (2).png"
+            alt="Project Image 2"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (3).png"
+            alt="Project Image 3"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (4).png"
+            alt="Project Image 4"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (5).png"
+            alt="Project Image 5"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (6).png"
+            alt="Project Image 4"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (7).png"
+            alt="Project Image 4"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="../../images/medical/1 (8).png"
+            alt="Project Image 4"
+            class="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+
+          <!-- Add more images as needed -->
+        </div>
+      </section>
+
+      <!-- Project Description -->
+      <section class="mb-6">
+        <h2 class="text-4xl font-bold mb-2 text-black">Project Description:</h2>
+        <p class="text-black text-justify text-xl font-semibold">
+          The Medicinal Plant Identification System is an innovative machine
+          learning project designed to accurately identify medicinal plants
+          based on images of their leaves. Leveraging the power of computer
+          vision and artificial intelligence, this system can distinguish
+          between various medicinal plants, providing valuable information to
+          users. For this project, a unique database was created by capturing
+          images of five significant Indian medicinal plants: Kadipatta, Aloe
+          Vera, Kadulimb, Adulsa, and Bel. The system features a user-friendly
+          web-based interface developed using Python libraries, allowing users
+          to upload leaf images and receive instant identification results.
+        </p>
+      </section>
+
+      <!-- Technologies Used -->
+      <section class="mb-6">
+        <h2 class="text-4xl font-bold mb-2 text-black">Technologies Used</h2>
+        <ul
+          class="list-disc list-outside text-justify text-black text-xl pl-6 font-semibold"
+        >
+        <li>Python: Core programming language for developing the project.</li>
+        <li>OpenCV: Used for image processing and pre-processing tasks.</li>
+        <li>TensorFlow/Keras: Frameworks for building and training the machine learning models.</li>
+        <li>Flask/Django: Web framework to develop the web-based interface.</li>
+        <li>HTML/CSS/JavaScript: Front-end technologies for designing the web interface.</li>
+        <li>Pandas/Numpy: Libraries for handling data manipulation and numerical operations.</li>
+        </ul>
+      </section>
+
+      <!-- Summary -->
+      <section>
+        <h2 class="text-4xl font-bold mb-2 text-black">Summary</h2>
+        <p class="text-black text-xl text-justify font-semibold">
+          The Medicinal Plant Identification System significantly contributes to
+          the field of botany and herbal medicine by automating the plant
+          identification process. By creating a reliable and efficient tool for
+          recognizing medicinal plants, this project not only aids researchers
+          and enthusiasts in identifying plants accurately but also fosters
+          greater appreciation and understanding of medicinal flora. The
+          combination of a robust machine learning model and a user-friendly web
+          interface ensures accessibility and ease of use, making this system a
+          valuable resource for anyone interested in medicinal plants.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mb-0 mt-2">
+      <!-- Footer -->
+
+      <div class="max-w-4xl mx-auto px-4">
+        <nav
+          class="flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0"
+        >
+          <a
+            href="../index.html#Home"
+            class="text-center md:text-left text-lg font-semibold hover:text-gray-400"
+            >Home</a
+          >
+          <a
+            href="../index.html#About"
+            class="text-center md:text-left text-lg font-semibold hover:text-gray-400"
+            >About</a
+          >
+          <a
+            href="../index.html#skills"
+            class="text-center md:text-left text-lg font-semibold hover:text-gray-400"
+            >Skills</a
+          >
+          <a
+            href="../index.html#projects"
+            class="text-center md:text-left text-lg font-semibold hover:text-gray-400"
+            >Projects</a
+          >
+          <a
+            href="../index.html#contact"
+            class="text-center md:text-left text-lg font-semibold hover:text-gray-400"
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+        <p>&copy; 2024 Swanand Kulkarni. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for scrolling functionality -->
+    <script>
+      const gallery = document.getElementById("image-gallery");
+      const scrollLeft = document.getElementById("scroll-left");
+      const scrollRight = document.getElementById("scroll-right");
+
+      scrollLeft.addEventListener("click", () => {
+        gallery.scrollBy({ left: -gallery.clientWidth, behavior: "smooth" });
+      });
+
+      scrollRight.addEventListener("click", () => {
+        gallery.scrollBy({ left: gallery.clientWidth, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
