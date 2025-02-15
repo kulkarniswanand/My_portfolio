@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Tailoring Management System</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom styles for scrollbar */
+    .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, Opera */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+ 
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6">
+
+    <!-- Project Title -->
+    <section class="mb-6">
+      <h1 class="text-4xl font-bold mb-4">Tailoring Management System</h1>
+    </section>
+
+    <section class="relative mb-6">
+        <div class="flex justify-between mb-2">
+          <button id="scroll-left" class="bg-gray-800 text-white p-2 rounded hover:bg-gray-700">Left</button>
+          <button id="scroll-right" class="bg-gray-800 text-white p-2 rounded hover:bg-gray-700">Right</button>
+        </div>
+        <div class="flex overflow-x-scroll scrollbar-hide space-x-4" id="image-gallery">
+          <img src="project-image1.jpg" alt="Project Image 1" class="w-72 h-64 object-cover rounded-lg shadow-md">
+          <img src="project-image2.jpg" alt="Project Image 2" class="w-64 h-64 object-cover rounded-lg shadow-md">
+          <img src="project-image3.jpg" alt="Project Image 3" class="w-64 h-64 object-cover rounded-lg shadow-md">
+          <img src="project-image4.jpg" alt="Project Image 4" class="w-64 h-64 object-cover rounded-lg shadow-md">
+          <img src="project-image5.jpg" alt="Project Image 5" class="w-64 h-64 object-cover rounded-lg shadow-md">
+          <!-- Add more images as needed -->
+        </div>
+      </section>
+
+    <!-- Project Description -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Project Description</h2>
+      <p class="text-gray-700">The Tailoring Management System is a comprehensive solution designed to streamline the operations of a tailoring business. This system allows for efficient management of customer orders, inventory, staff schedules, and financial transactions. It provides a user-friendly interface for tailors to track their work, manage appointments, and ensure timely delivery of garments.</p>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Technologies Used</h2>
+      <ul class="list-disc list-inside">
+        <li class="text-gray-700">HTML, CSS, and JavaScript for the front-end development</li>
+        <li class="text-gray-700">Tailwind CSS for styling</li>
+        <li class="text-gray-700">React.js for building user interfaces</li>
+        <li class="text-gray-700">Node.js and Express.js for the back-end development</li>
+        <li class="text-gray-700">MongoDB for the database</li>
+        <li class="text-gray-700">RESTful API for communication between the front-end and back-end</li>
+      </ul>
+    </section>
+
+    <!-- Summary -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Summary</h2>
+      <p class="text-gray-700">The Tailoring Management System significantly enhances the efficiency and productivity of tailoring businesses by automating routine tasks and providing real-time insights into operations. It ensures customer satisfaction by enabling precise order tracking and timely delivery, ultimately contributing to the growth and success of the business.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
+
+
+
+
+
+
+   <!-- JavaScript for scrolling functionality -->
+   <script>
+    const gallery = document.getElementById('image-gallery');
+    const scrollLeft = document.getElementById('scroll-left');
+    const scrollRight = document.getElementById('scroll-right');
+
+    scrollLeft.addEventListener('click', () => {
+      gallery.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+      gallery.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
