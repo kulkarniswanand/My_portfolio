@@ -7,32 +7,28 @@
     <script
       src="https://kit.fontawesome.com/672072d29b.js"
       crossorigin="anonymous"></script>
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
    
-      <style>
-        @keyframes bounce {
-          0%, 100% { transform: translateY(-10px); }
-          50% { transform: translateY(0); }
-        }
-      
-        @keyframes pulse {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.5; }
-        }
-      
-        .animate-bounce {
-          animation: bounce 2s infinite;
-        }
-      
-        .animate-pulse {
-          animation: pulse 2s infinite;
-        }
-      </style>
-
-   
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(-10px); }
+        50% { transform: translateY(0); }
+      }
+    
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+    
+      .animate-bounce {
+        animation: bounce 2s infinite;
+      }
+    
+      .animate-pulse {
+        animation: pulse 2s infinite;
+      }
+    </style>
   </head>
-
-
   
   <body class="font-[roboto]">
     <div class="fixed top-0 h-max w-max lg:hidden" onclick="showmenu(this)">
@@ -44,7 +40,7 @@
     </div>
     <div
       id="Home"
-      class="bg-[url('/images/blueimg.jpg')] w-full h-screen bg-cover bg-no-repeat bg-center bg-fixed box-border pt-7">
+      class="bg-[url('images/blueimg.jpg')] w-full h-screen bg-cover bg-no-repeat bg-center bg-fixed box-border pt-7">
       <div
         id="menus"
         class="z-50 menus w-32 bg-slate-800 rounded-lg h-max fixed left-[-50%] transition-all duration-100 my-4 lg:flex lg:justify-around lg:left-0 lg:flex-row lg:top-0 lg:w-full lg:h-12 lg:m-0 lg:items-center lg:bg-transparent lg:text-white">
@@ -78,7 +74,7 @@
         class="w-full mt-5 h-max lg:flex lg:justify-between lg:h-3/4"
       >
         <div
-          class="h-96 w-80 mx-auto rounded-full bg-[url('/images/photo2.png')] bg-contain bg-center bg-no-repeat border-8 border-violet-800 border-solid my-6 lg:w-1/2 lg:h-full lg:my-auto lg:ml-10"
+          class="h-96 w-80 mx-auto rounded-full bg-[url('images/photo2.png')] bg-contain bg-center bg-no-repeat border-8 border-violet-800 border-solid my-6 lg:w-1/2 lg:h-full lg:my-auto lg:ml-10"
         ></div>
         <div
           class="flex flex-col items-center w-full h-auto mt-5 lg:my-auto lg:self-end"
@@ -99,7 +95,7 @@
             <button
               class="w-32 h-10 font-bold text-white transition-all duration-1000 ease-out bg-gray-900 border-2 border-solid rounded-2xl border-violet-800 hover:bg-white hover:text-black"
             >
-              <a href="../MYRESUME_2_notable.pdf" download="MYRESUME_2_notable"
+              <a href="MYRESUME_2_notable.pdf" download="MYRESUME_2_notable"
                 >Resume</a
               >
             </button>
@@ -143,7 +139,7 @@
     </div>
 
     <!-- about section -->
-    <section id="About" class="bg-[url('/images/back5.jpg')] bg-cover bg-center pt-12 m-0 h-auto w-full bg-opacity-5">
+    <section id="About" class="bg-[url('images/back5.jpg')] bg-cover bg-center pt-12 m-0 h-auto w-full bg-opacity-5">
       <div id="title" class="flex justify-center w-full h-max mb-6">
           <h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">
               About <span class="text-yellow-500">Me</span>
@@ -190,17 +186,7 @@
       </div>
   </section>
   
-    
-    
-    
-    
-    
-
-    
-    
-    
-
-    <section id="Skills" class="w-full bg-[url('/images/back1.jpg')] bg-cover bg-center p-12 m-0 h-full">
+    <section id="Skills" class="w-full bg-[url('images/back1.jpg')] bg-cover bg-center p-12 m-0 h-full">
       <div id="title" class="flex justify-center w-full h-max mb-6"><h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">My <span class="text-yellow-500">Skills</span></h1></div>
 
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
@@ -266,18 +252,15 @@
         </div>
       </div>
     </section>
-    
 
-
-
-    <section id="Projects" class="w-full bg-[url('/images/back5.jpg')] bg-cover bg-center p-12 m-0 h-max lg:h-max">
+    <section id="Projects" class="w-full bg-[url('images/back5.jpg')] bg-cover bg-center p-12 m-0 h-max lg:h-max">
       <div id="title" class="flex justify-center w-full h-max mb-20">
         <h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">My <span class="text-yellow-500">Projects</span></h1>
       </div>
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div class="relative group">
           <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/tailoring.jpg" alt="Project 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <img src="images/tailoring.jpg" alt="Project 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
               <h3 class="mb-2 text-3xl font-bold text-yellow-500">Tailoring management system</h3>
               <p class="mb-4 text-lg text-white">Developed in .Net helps to tailoring industry to manage customer records and save time</p>
@@ -287,7 +270,7 @@
         </div>
         <div class="relative group">
           <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/medical.jpg" alt="Project 2" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <img src="images/medical.jpg" alt="Project 2" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
               <h3 class="mb-2 text-3xl font-bold text-yellow-500">Medical plants leaves Detection</h3>
               <p class="mb-4 text-lg text-white">Developed using machine learning which detects the medical plants category</p>
@@ -297,214 +280,293 @@
         </div>
         <div class="relative group">
           <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/port1.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <img src="images/port1.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
               <h3 class="mb-2 text-3xl font-bold text-yellow-500">My Portfolio</h3>
-              <p class="mb-4 text-lg text-white">Web based, tells about me and my skills and projects</p>
-              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more project cards as needed -->
-        <div class="relative group">
-          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/QR.png" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
-              <h3 class="mb-2 text-3xl font-bold text-yellow-500">QR Generator</h3>
-              <p class="mb-4 text-lg text-white">GUI based QR generator app developed in Python</p>
-              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="relative group">
-          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/encryption.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
-              <h3 class="mb-2 text-3xl font-bold text-yellow-500">Encryption and Decryption</h3>
-              <p class="mb-4 text-lg text-white">App to encrypt and decrypt files developed using java</p>
-              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="relative group">
-          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/guess.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
-              <h3 class="mb-2 text-3xl font-bold text-yellow-500">Number guessing game</h3>
-              <p class="mb-4 text-lg text-white">It is number guessing fun game developed using python</p>
-              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="relative group">
-          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
-            <img src="/images/android.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
-              <h3 class="mb-2 text-3xl font-bold text-yellow-500">Syllabus Android app</h3>
-              <p class="mb-4 text-lg text-white">App Showing syllabus of subject</p>
-              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
-            </div>
-          </div>
-        </div>
-        
-
-
-
-      </div>
-    </section>
-    
-    
-
-    <!-- Contact Section -->
-    <section id="Contact" class="bg-[url('/images/new1.webp')] w-full bg-cover bg-center h-screen py-12">
-      <div id="title" class="flex justify-center w-full h-max mb-6">
-        <h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">
-          Contact <span class="text-yellow-500">Me</span>
-        </h1>
-      </div>
-      <div class="flex justify-center w-full">
-        <form action="https://formspree.io/f/xvoeedvo" method="POST" class="bg-transparent p-8 rounded-3xl w-full md:w-1/2  border-2 border-solid border-r-yellow-50 ">
-          <div class="mb-6">
-            <label for="name" class="block text-white font-bold mb-2 text-lg">Name:</label>
-            <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500" />
-          </div>
-          <div class="mb-6">
-            <label for="email" class="block text-white font-bold mb-2 text-lg">Email:</label>
-            <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500" />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block text-white font-bold mb-2 text-lg">Message:</label>
-            <textarea id="message" name="message" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500"></textarea>
-          </div>
-          <div class="flex justify-center">
-            <button type="submit" class="w-32 h-10 font-bold text-white transition-all duration-1000 ease-out bg-gray-900 border-2 border-solid rounded-2xl border-violet-800 hover:bg-white hover:text-black">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
+              <p class="mb-4 text-lg text-white">Web based, tells about me and my skills and<!-- filepath: f:\PORTFOLIO\Final\Final\index.html -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Swanand Kulkarni</title>
+    <script
+      src="https://kit.fontawesome.com/672072d29b.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
    
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(-10px); }
+        50% { transform: translateY(0); }
+      }
     
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
     
+      .animate-bounce {
+        animation: bounce 2s infinite;
+      }
     
-
-
-
-
-
-
-
-    <footer class="bg-gray-900 text-white py-12 mt-8">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          <!-- About Me -->
-          <div class="flex flex-col items-center md:items-start">
-            <h3 class="text-xl font-semibold mb-4 animate-bounce">About Me</h3>
-            <p class="text-center md:text-left">I am Swanand Kulkarni, a passionate software developer with expertise in web and desktop applications. Always eager to learn and innovate.</p>
-          </div>
-    
-          <!-- Contact Info -->
-          <div class="flex flex-col items-center md:items-start">
-            <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
-            <p class="mb-2">Email: <a href="mailto:kulkarniswanand2003@gmail.com" class="text-yellow-500 hover:underline">kulkarniswanand2003@gmail.com</a></p>
-            <p class="mb-2">Phone: <a href="tel:+91 9373409250" class="text-yellow-500 hover:underline">+91 9373409250</a></p>
-            <p class="mb-2">Address: Bramhanpuri,sutar galli,palus</p>
-          </div>
-    
-          <!-- Map -->
-          <div class="flex justify-center md:justify-center">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.35787994411226!2d74.45636473596095!3d17.086046279023414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc16d1ef2520087%3A0x81d838b0b1cc0d5f!2sSwanand%20Sanjay%20Kulkarni!5e0!3m2!1sen!2sin!4v1718508066859!5m2!1sen!2sin"
-              width="100%"
-              height="200"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              class="rounded-lg transform transition duration-300 hover:scale-105"
-            ></iframe>
-          </div>
-    
-          <!-- Newsletter Subscription -->
-            <!-- Recent Projects -->
-      
-
-      <!-- Inspirational Quote -->
-      <div class="flex flex-col items-center md:items-end">
-        <h3 class="text-xl font-semibold mb-4 animate-pulse">Inspirational Quote</h3>
-        <blockquote class="italic text-center md:text-right">
-          "The only limit to our realization of tomorrow is our doubts of today."
-          <br><span class="text-yellow-500">- Franklin D. Roosevelt</span>
-        </blockquote>
-      </div>
-
-        </div>
-        
-        <!-- Social Media Links -->
-        <div class="mt-8 text-center">
-          <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
-          <div class="flex justify-center space-x-4 animate-bounce">
-            <a href="https://www.facebook.com/swanand.kulkarni.1466/" target="_blank"><i class="text-2xl fa-brands fa-facebook-square hover:text-yellow-500 transition duration-300"></i></a>
-            <a href="https://www.instagram.com/swanand_1323/" target="_blank"><i class="text-2xl fa-brands fa-instagram-square hover:text-yellow-500 transition duration-300"></i></a>
-            <a href="https://www.linkedin.com/in/swanand01" target="_blank"><i class="text-2xl fa-brands fa-linkedin hover:text-yellow-500 transition duration-300"></i></a>
-            <a href="https://github.com/kulkarniswanand" target="_blank"><i class="text-2xl fa-brands fa-github-square hover:text-yellow-500 transition duration-300"></i></a>
-            <a href="https://youtube.com/@swanandkulkarni1323?si=1A0-rp7pYZ2ngk3S" target="_blank"><i class="text-2xl fa-brands fa-youtube-square hover:text-yellow-500 transition duration-300"></i></a>
-          </div>
-        </div>
-    
-        <!-- Copyright -->
-        <div class="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p>&copy; 2024 Swanand Kulkarni. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-    
-    
-
-
-
-
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Developer", "Engineer", "Programmer"],
-        typeSpeed: 80,
-        loop: true,
-      });
-    </script>
-
-    <script src="../js files/menu.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-
-    <script src="../js files/about.js"></script>
+      .animate-pulse {
+        animation: pulse 2s infinite;
+      }
+    </style>
+  </head>
   
+  <body class="font-[roboto]">
+    <div class="fixed top-0 h-max w-max lg:hidden" onclick="showmenu(this)">
+      <i class="mx-6 mt-3 text-3xl text-white fa-solid fa-bars" id="bar"></i>
+      <i
+        class="absolute top-0 left-0 hidden mx-6 text-3xl mt-3 text-white fa-solid fa-close"
+        id="close"
+      ></i>
+    </div>
+    <div
+      id="Home"
+      class="bg-[url('images/blueimg.jpg')] w-full h-screen bg-cover bg-no-repeat bg-center bg-fixed box-border pt-7">
+      <div
+        id="menus"
+        class="z-50 menus w-32 bg-slate-800 rounded-lg h-max fixed left-[-50%] transition-all duration-100 my-4 lg:flex lg:justify-around lg:left-0 lg:flex-row lg:top-0 lg:w-full lg:h-12 lg:m-0 lg:items-center lg:bg-transparent lg:text-white">
+        <ul
+          class="p-8 lg:flex lg:flex-row lg:p-0 lg:justify-around lg:w-full lg:pl-96 lg:h-max">
+          <li
+            class="my-5 font-bold text-center text-white transition-all duration-100 ease-in-out border-solid hover:text-yellow-300 hover:border-b-2 hover:border-white lg:my-0">
+            <a href="#Home" class="lg:text-xl">Home</a>
+          </li>
+          <li
+            class="my-5 text-white transition-all duration-100 ease-in-out border-solid text-center mt font-bold hover:text-yellow-300 hover:border-b-2 hover:border-white lg:my-0">
+            <a href="#About" class="lg:text-xl">About</a>
+          </li>
+          <li
+            class="my-5 font-bold text-center text-white transition-all duration-100 ease-in-out border-solid hover:text-yellow-300 hover:border-b-2 hover:border-white lg:my-0">
+            <a href="#Skills" class="lg:text-xl">Skills</a>
+          </li>
+          <li
+            class="my-5 font-bold text-center text-white transition-all duration-100 ease-in-out border-solid hover:text-yellow-300 hover:border-b-2 hover:border-white lg:my-0">
+            <a href="#Projects" class="lg:text-xl">Projects</a>
+          </li>
+          <li
+            class="my-5 font-bold text-center text-white transition-all duration-100 ease-in-out border-solid hover:text-yellow-300 hover:border-b-2 hover:border-white lg:my-0">
+            <a href="#Contact" class="lg:text-xl">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-    <script>
-      $(document).ready(function () {
-        // When icon1 is clicked, hide it and show icon2
-        $("#close").on("click", function () {
-          $(this).addClass("hidden");
-          $("#bar").removeClass("hidden");
-        });
+      <div
+        id="banner"
+        class="w-full mt-5 h-max lg:flex lg:justify-between lg:h-3/4"
+      >
+        <div
+          class="h-96 w-80 mx-auto rounded-full bg-[url('images/photo2.png')] bg-contain bg-center bg-no-repeat border-8 border-violet-800 border-solid my-6 lg:w-1/2 lg:h-full lg:my-auto lg:ml-10"
+        ></div>
+        <div
+          class="flex flex-col items-center w-full h-auto mt-5 lg:my-auto lg:self-end"
+        >
+          <h1 class="text-3xl font-extrabold text-white">
+            Hello,I'm Swanand <br />
+          </h1>
+          <h1 class="text-3xl font-extrabold lg:inline-block">
+            <span id="element" class="text-yellow-500"></span>
+          </h1>
+          <p class="m-2 text-center text-white lg:inline-block">
+            Passionate Software Developer | Crafting Innovative Solutions with
+            Code
+          </p>
+          <div
+            class="box-border flex justify-center w-full h-auto mt-4 xl:mt-0"
+          >
+            <button
+              class="w-32 h-10 font-bold text-white transition-all duration-1000 ease-out bg-gray-900 border-2 border-solid rounded-2xl border-violet-800 hover:bg-white hover:text-black"
+            >
+              <a href="MYRESUME_2_notable.pdf" download="MYRESUME_2_notable"
+                >Resume</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
 
-        // When icon2 is clicked, hide it and show icon1
-        $("#bar").on("click", function () {
-          $(this).addClass("hidden");
-          $("#close").removeClass("hidden");
-        });
-      });
-    </script>
+      <div
+        class="w-full h-auto mt-8 flex justify-around lg:mt-2 lg:w-1/2 lg:ml-[40%]"
+      >
+        <a
+          href="https://www.facebook.com/swanand.kulkarni.1466/"
+          target="_blank"
+        >
+          <i
+            class="text-5xl text-white fa-brands fa-square-facebook hover:text-yellow-300"
+          ></i>
+        </a>
+        <a href="https://www.instagram.com/swanand_1323/" target="_blank">
+          <i
+            class="text-5xl text-white fa-brands fa-square-instagram hover:text-yellow-300"
+          ></i>
+        </a>
+        <a href="https://www.linkedin.com/in/swanand01" target="_blank">
+          <i
+            class="text-5xl text-white fa-brands fa-linkedin hover:text-yellow-300"
+          ></i> </a
+        ><a href="https://github.com/kulkarniswanand" target="_blank">
+          <i
+            class="text-5xl text-white fa-brands fa-square-github hover:text-yellow-300"
+          ></i> </a
+        ><a
+          href="https://youtube.com/@swanandkulkarni1323?si=1A0-rp7pYZ2ngk3S"
+          target="_blank"
+        >
+          <i
+            class="text-5xl text-white fa-brands fa-square-youtube hover:text-yellow-300"
+          ></i>
+        </a>
+      </div>
+    </div>
 
+    <!-- about section -->
+    <section id="About" class="bg-[url('images/back5.jpg')] bg-cover bg-center pt-12 m-0 h-auto w-full bg-opacity-5">
+      <div id="title" class="flex justify-center w-full h-max mb-6">
+          <h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">
+              About <span class="text-yellow-500">Me</span>
+          </h1>
+      </div>
+      
+      <!-- Icons for Mobile Devices -->
+      <div class="flex justify-around items-center mt-16">
+          <div class="mr-4">
+              <a href="#" class="about-icon" onclick="showContent('personal'); return false;"> <!-- Personal Info Icon -->
+                  <i class="fas fa-user-circle text-yellow-500 text-3xl hover:text-yellow-600 lg:text-6xl"></i>
+              </a>
+          </div>
+          <div class="mr-4">
+              <a href="#" class="about-icon" onclick="showContent('education'); return false;"> <!-- Education Icon -->
+                  <i class="fas fa-graduation-cap text-yellow-500 text-3xl hover:text-yellow-600 lg:text-6xl"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#" class="about-icon" onclick="showContent('hobbies'); return false;"> <!-- Hobbies Icon -->
+                  <i class="fas fa-puzzle-piece text-yellow-500 text-3xl hover:text-yellow-600 lg:text-6xl"></i>
+              </a>
+          </div>
+      </div>
+  
+      <!-- Content Cards -->
+      <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 lg:m-auto lg:mt-5" id="contentCards">
+        <div class="bg-transparent border-2 border-solid border-white rounded-xl">
+          <h2 class="text-3xl font-bold text-white text-center mb-2 mt-2">Personal Information</h2>
+          <p class="text-white m-2">
+              <ul class="text-white m-5 list-inside list-disc text-xl">
+                  <li class="mt-2 mb-2">Name: Swanand Sanjay Kulkarni</li>
+                  <li class="mt-2 mb-2">Birth Date:1 March,2003</li>
+                  <li class="mt-2 mb-2">Age: 21 years old</li>
+                  <li class="mt-2 mb-2">Blood group: A+</li>
+                  <li class="mt-2 mb-2">Gender: Male</li>
+                  <li class="mt-2 mb-2">Address: Palus,Dist-Sangli</li>
+                  <li class="mt-2 mb-2">Nationality: Indian</li>
+                  <li class="mt-2 mb-2">Mobile: +91 9373409250</li>
+             </ul>
+          
+          </p>
+      </div>
+      </div>
+  </section>
+  
+    <section id="Skills" class="w-full bg-[url('images/back1.jpg')] bg-cover bg-center p-12 m-0 h-full">
+      <div id="title" class="flex justify-center w-full h-max mb-6"><h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">My <span class="text-yellow-500">Skills</span></h1></div>
 
-    
-  </body>
-</html>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-code text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Programming Languages</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">C (Pro)</li>
+            <li class="mb-2">C++ (Pro)</li>
+            <li class="mb-2">Java (Intermediate)</li>
+            <li class="mb-2">Python (Intermediate)</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-laptop-code text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Web Development</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">HTML & CSS (Pro)</li>
+            <li class="mb-2">Javascript (Pro)</li>
+            <li class="mb-2">PHP (Intermediate)</li>
+            <li class="mb-2">Tailwind CSS (Intermediate)</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-database text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Databases</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">MySQL (Intermediate)</li>
+            <li class="mb-2">Oracle (Intermediate)</li>
+            <li class="mb-2">MongoDB (Intermediate)</li>
+            <li class="mb-2">SQLite (Intermediate)</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-tools text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Tools & Technologies</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">Git & GitHub (Pro)</li>
+            <li class="mb-2">Figma (Intermediate)</li>
+            <li class="mb-2">MS Office (Pro)</li>
+            <li class="mb-2">Visual Studio Code (Pro)</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-comments text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Communication Skills</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">Public Speaking (Pro)</li>
+            <li class="mb-2">Team Collaboration (Pro)</li>
+            <li class="mb-2">Presentation (Pro)</li>
+            <li class="mb-2">Leadership (Intermediate)</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start p-6 bg-white bg-opacity-20 rounded-lg shadow-md">
+          <i class="fas fa-star text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-2xl font-bold text-white mb-4">Extra Skills</h3>
+          <ul class="text-lg font-bold text-white list-disc list-inside">
+            <li class="mb-2">Project Management (Intermediate)</li>
+            <li class="mb-2">Graphic Design (Intermediate)</li>
+            <li class="mb-2">Editing (Intermediate)</li>
+            <li class="mb-2">Agile Methodology (Pro)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-
-
+    <section id="Projects" class="w-full bg-[url('images/back5.jpg')] bg-cover bg-center p-12 m-0 h-max lg:h-max">
+      <div id="title" class="flex justify-center w-full h-max mb-20">
+        <h1 class="h-auto text-4xl text-white transition-all duration-75 ease-in-out border-yellow-500 hover:border-b-4">My <span class="text-yellow-500">Projects</span></h1>
+      </div>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="relative group">
+          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
+            <img src="images/tailoring.jpg" alt="Project 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
+              <h3 class="mb-2 text-3xl font-bold text-yellow-500">Tailoring management system</h3>
+              <p class="mb-4 text-lg text-white">Developed in .Net helps to tailoring industry to manage customer records and save time</p>
+              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
+            <img src="images/medical.jpg" alt="Project 2" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
+              <h3 class="mb-2 text-3xl font-bold text-yellow-500">Medical plants leaves Detection</h3>
+              <p class="mb-4 text-lg text-white">Developed using machine learning which detects the medical plants category</p>
+              <a href="#" class="px-4 py-2 text-white transition-all duration-300 ease-in-out bg-yellow-500 rounded hover:bg-yellow-600">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden bg-white bg-opacity-20 rounded-lg shadow-md h-80">
+            <img src="images/port1.jpg" alt="Project 3" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-300 ease-in-out opacity-0 bg-black bg-opacity-70 group-hover:opacity-100">
+              <h3 class="mb-2 text-3xl font-bold text-yellow-500">My Portfolio</h3>
+              <p class="mb-4 text-lg text-white">Web based, tells about me and my skills and
